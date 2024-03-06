@@ -10,7 +10,7 @@ def handle_complaint(komplain: str) -> str:
     #Buat instance LLM dengan nilai temprature 0,9 (nilai lebih tinggi membuat keluaran lebih acak).
     
     # Merancang template untuk merespon komplain
-    prompt = PromptTemplate(input_variables=["komplain"], template="Saya seorang perwakilan layanan pelanggan. Saya menerima keluhan berikut: {komplain}. Respon saya adalah:")
+    prompt = PromptTemplate(input_variables=["komplain"], template="Saya seorang perwakilan layanan pelanggan. Saya menerima keluhan berikut: {komplain}. Respon saya adala:")
     # Membuat model bahasa berantai dengan template yang telah dirancang
     chain = LLMChain(llm=llm, prompt=prompt)
     return chain.run(komplain)
