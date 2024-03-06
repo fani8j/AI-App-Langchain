@@ -14,4 +14,4 @@
 
 - Jupiter Notebook
 - Python
-- Hugging Face
+- Open AI API
